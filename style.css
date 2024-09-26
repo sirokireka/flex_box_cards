@@ -1,0 +1,56 @@
+:root{
+    --bgc:rgb(34, 87, 122);
+    --turc:rgb(56, 163, 165);
+    --green:rgb(87,204,153);
+    --lightgreen:rgb(128,233,153);
+    --light:rgb(199,249,204)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width:100% ;}
+
+body{
+    background-color: var(--bgc) ;
+}
+main{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--light);
+    width: 20rem;
+
+}
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+.card-body{
+ display: flex;  
+ flex-direction:column ;
+ row-gap: 1rem; 
+ padding: 1rem;
+}
+.card-body p{
+    line-height: 1.5;
+    text-align: justify;
+}
+.card-body a{
+    text-decoration: none;
+    color: var(--light);
+    background-color: var(--bgc);
+    padding: .5rem 1rem;
+    width: 5rem;
+    display: block;
+    border-radius: 5px;
+
+}
+.card a:hover{
+    background-color: var(--green);
+    color: black;
+}
